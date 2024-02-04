@@ -18,11 +18,8 @@ const SelectInput = (props) => {
       <Select 
         value={selectedItem} 
         onChange={handleChange} 
-        labelProps={{
-            className: "before:content-none"
-        }}
-        
-        >
+        label="Select"
+      >
         {options.map(option => <Option key={option} value={option}>{option}</Option>)}
       </Select>
     </div>
