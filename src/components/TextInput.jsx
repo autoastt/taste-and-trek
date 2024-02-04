@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Input,Typography } from "@material-tailwind/react";
 const TextInput = (props) => {
-    const {name,holder,handleChange} = props
+    const {name,holder,input,setInput,index} = props
+    const handleChange = e => {
+      const newInput = input 
+      newInput[index] = e.target.value
+      setInput(newInput)
+      // console.log(input)
+    }
     return (
         <div className="flex flex-col gap-6">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
