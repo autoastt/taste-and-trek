@@ -6,14 +6,18 @@ Typography} from "@material-tailwind/react"
 import TextInput from "./TextInput"
 import SelectInput from "./SelectInput"
 import generation from "../gpt/generation"
+
 const Form = (props) => {
     const {input, setInput, output, setOutput} = props
     const handleSubmit = e => {
         e.preventDefault() 
-        let newOutput
-        generation(input).then((result) => (newOutput = result))
-        setOutput(newOutput)
-        console.log(output)
+        console.log(input)
+        generation(input)
+        .then((result) => {
+          // console.log("result", result)
+          setOutput(result)
+          console.log("out", output)
+        })
     }
     return (
     <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
@@ -34,10 +38,9 @@ const Form = (props) => {
           <TextInput name="Preference" holder="Your preference" input={input} setInput={setInput} index="preference"/>
           <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" />
         </div>
-        <Button  type="submit"  className="mt-6" fullWidth>
+        <Button type="submit" className="mt-6" fullWidth>
           submit
         </Button>
-        
       </form>
     </Card>
     )

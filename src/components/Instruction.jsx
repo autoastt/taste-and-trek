@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 const Instruction = () => {
   return (
     <div>
-      <Typography className="text-indigo-500 text-5xl font-bold text-center">
+      <Typography className="text-indigo-500 text-5xl font-bold text-center pb-4">
         Plan your day!<br></br>
       </Typography>
       <Typography className="text-xl text-center" color="black">
