@@ -1,0 +1,22 @@
+var data = {
+  status: "resident",
+  relationship: "family",
+  purpose: "family trip",
+  budget: "high",
+  preference: "local Singaporean food and indoor",
+  recent_travel: "Garden by the Bay",
+};
+
+chatgpt(data)
+  .then((result) => console.log(result))
+  .catch((error) => console.error("Test Error:", error));
+
+Breakfast at Tiong Bahru Market; 30 Seng Poh Road, Singapore 168898; A bustling food haven known for its wide range of local breakfast delicacies such as Chwee Kueh, Lor Mee, and freshly brewed traditional coffee.
+
+Activity: Visit to the ArtScience Museum; 6 Bayfront Ave, Singapore 018974, Marina Bay Sands; Explore the fascinating intersection of art, science, technology, and culture in one of Singapore's most iconic architectural marvels.
+
+Lunch at Lau Pa Sat; 18 Raffles Quay, Singapore 048582; A historic Victorian structure housing a vibrant food market offering an array of Singaporean street food favorites like Satay, Hainanese Chicken Rice, and Laksa.
+
+Activity: Shopping and Exploration at Jewel Changi Airport; 78 Airport Boulevard, Singapore 819666; Experience the world-renowned shopping and entertainment complex, home to the HSBC Rain Vortex, the world's tallest indoor waterfall.
+
+Dinner at National Kitchen by Violet Oon; 1 St. Andrew's Road, #02–01, National Gallery Singapore, Singapore 178957; Savor the authentic flavors of Peranakan cuisine in an elegant setting, offering dishes like Beef Rendang and Dry Laksa.
