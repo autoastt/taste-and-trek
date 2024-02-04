@@ -3,7 +3,7 @@ import chatgpt from "./chatgpt.js";
 import dalle from "./dalle.js";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
