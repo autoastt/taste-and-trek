@@ -4,23 +4,23 @@ const LINKS = [
   {
     pic: "/src/assets/",
     title: "Kulpatch Chananum",
-    desc: ["NTU CS and Econ", "Year 1"],
-  },
-  {
-    pic: "/src/assets/",
-    title: "Phumrapee Pisutsin",
-    desc: ["NTU Mech and Econ", "Year 5"],
-  },
-  {
-    pic: "/src/assets/",
-    title: "Peeranat Kongkijpipat",
-    desc: ["NTU Biz and CS", "Year 1"],
+    desc: ["NTU CSEC", "Year 1"],
   },
   {
     pic: "/src/assets/",
     title: "Nathan Juirnarongrit",
-    desc: ["NTU Biz and CE, Year 1"],
+    desc: ["NTU BCE", "Year 1"],
   },
+  {
+    pic: "/src/assets/",
+    title: "Peeranat Kongkijpipat",
+    desc: ["NTU BCG", "Year 1"],
+  },
+  {
+    pic: "/src/assets/",
+    title: "Phumrapee Pisutsin",
+    desc: ["NTU MEEC", "Year 5"],
+  }
 ];
  
 const currentYear = new Date().getFullYear();
