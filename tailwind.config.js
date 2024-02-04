@@ -9,5 +9,8 @@ module.exports = withMT({
   theme: {
     extend: {},
   },
+  future : {
+    hoverOnlyWhenSupported : true,
+  },
   plugins: [],
 })
