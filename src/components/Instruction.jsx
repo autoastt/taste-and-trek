@@ -12,7 +12,7 @@ const Instruction = () => {
       <Typography variant = "Lead" color = "black">
         1st - type what you want<br></br>
         2nd - <br></br>
-        3rd - 
+        3rd - d
       </Typography>
     </div>
   )
