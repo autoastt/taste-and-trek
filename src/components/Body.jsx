@@ -28,11 +28,11 @@ const Body = () => {
         <Card className="pb-8 px-6">
           <Typography variant="h2" color="black" className="text-center py-4">Your Plan</Typography>
           {(output.text).map(out => 
-            <p key={out} className="pb-3">
+            <div key={out} className="pb-3">
               <Typography variant="h5"> {out.split(';')[0]} </Typography>
               <Typography variant="h6">Location: {out.split(';')[1]} </Typography>
               <Typography> {out.split(';')[2]} </Typography>
-            </p>
+            </div>
           )}
         </Card>
       </div>
