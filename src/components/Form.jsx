@@ -6,7 +6,7 @@ Button,
 Typography} from "@material-tailwind/react"
 import TextInput from "./TextInput"
 import SelectInput from "./SelectInput"
-const Form = () => {
+const Form = (props) => {
     const handleSubmit = e => {
         e.preventDefault() 
     }
@@ -23,10 +23,9 @@ const Form = () => {
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleSubmit}>
         <div className="mb-1 flex flex-col gap-6">
-          <TextInput name="Preference" holder="Your preference" />
-          <SelectInput />
+          <TextInput name="Preference" holder="Your preference" handleChange={handleChange}/>
+          <SelectInput options={["a","b","c","d","e"]} label="wow" handleChange={handleChange}/>
         </div>
-            
         <Button className="mt-6" fullWidth>
           submit
         </Button>

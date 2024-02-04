@@ -1,14 +1,11 @@
 import { useState } from "react";
 import { Select,Option } from "@material-tailwind/react";
-const SelectInput = () => {
+const SelectInput = (props) => {
+    const {options,label,handleChange} = props
     return (
     <div className="w-72">
-      <Select label="Select Version">
-        <Option>Material Tailwind HTML</Option>
-        <Option>Material Tailwind React</Option>
-        <Option>Material Tailwind Vue</Option>
-        <Option>Material Tailwind Angular</Option>
-        <Option>Material Tailwind Svelte</Option>
+      <Select label = {label} onChange={handleChange}>
+         {options.map(option => <Option key={option} value={option}>{option}</Option>)}
       </Select>
     </div>
     )
