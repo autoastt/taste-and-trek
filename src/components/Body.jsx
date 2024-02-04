@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Form from "./Form"
 import data from "../assets/data"
 import { Card } from "@material-tailwind/react"
+import Instruction from "./Instruction"
 
 const Body = () => {
   const [input, setInput] = useState(data)
@@ -10,7 +11,7 @@ const Body = () => {
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4">
       <div className="grid lg:grid-row-3 gap-2">
         <Card>
-          <p>Instruction</p>
+          <Instruction/>
         </Card>
         <div className="lg:hidden"><Form input={input} setInput={setInput}/></div>
         <Card>
