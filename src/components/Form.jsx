@@ -12,7 +12,7 @@ const Form = (props) => {
         e.preventDefault() 
     }
     return (
-    <Card color="transparent" shadow={false} className="items-center justify-center">
+    <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
       <Typography variant="h4" color="blue-gray" className="mt-11"> 
         Taste and Trek
       </Typography>

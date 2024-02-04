@@ -4,6 +4,7 @@ import {
   Collapse,
   Typography,
   IconButton,
+  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
  
@@ -17,7 +18,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          Pages
+        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -27,7 +28,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          Account
+        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -37,7 +38,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          Blocks
+        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -47,7 +48,8 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#about-us" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          About Us
+          <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
+          
         </a>
       </Typography>
     </ul>
