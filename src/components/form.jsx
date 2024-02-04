@@ -1,7 +1,9 @@
 import { useState } from "react";
 const Form = () => {
     return (
-        <p>test</p>
+        <div>
+            <p>test</p>
+        </div>
     )   
 }
 export default Form;
