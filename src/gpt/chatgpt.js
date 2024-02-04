@@ -1,11 +1,12 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
   dangerouslyAllowBrowser: true,
 });
 
 async function chatgpt(data) {
+  
   const completion = await openai.chat.completions.create({
     messages: [
       {
@@ -21,7 +22,7 @@ async function chatgpt(data) {
           (1) name
           (2) specific location (postal address) + shopping mall / attraction name if any 
           (3) short attractive description of each place
-        List all the activities and meals without number label or bold texts, but label if it is an activity or which meal it is.`,
+        List all the activities and meals without bold texts and label from 1 to 5 without any headings`,
       },
     ],
     model: "gpt-4-0125-preview",
@@ -30,17 +31,19 @@ async function chatgpt(data) {
   return completion["choices"][0]["message"]["content"];
 }
 
-var data = {
-  status: "resident",
-  relationship: "family",
-  purpose: "family trip",
-  budget: "high",
-  preference: "local Singaporean food and indoor",
-  recent_travel: "Garden by the Bay",
-};
+// var data = {
+//   gender: "male",
+//   age: "20",
+//   status: "resident",
+//   relationship: "family",
+//   purpose: "family trip",
+//   budget: "high",
+//   preference: "local Singaporean food and indoor",
+//   recent_travel: "Garden by the Bay",
+// };
 
-chatgpt(data)
-  .then((result) => console.log(result))
-  .catch((error) => console.error("Test Error:", error));
+// chatgpt(data)
+//   .then((result) => console.log(result))
+//   .catch((error) => console.error("Test Error:", error));
 
 export default chatgpt;
