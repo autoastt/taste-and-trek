@@ -1,7 +1,6 @@
 import { useState } from "react"
 import {
 Card,
-Input,
 Button,
 Typography} from "@material-tailwind/react"
 import TextInput from "./TextInput"
@@ -21,9 +20,14 @@ const Form = (props) => {
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleSubmit}>
         <div className="mb-1 flex flex-col gap-6">
+          <SelectInput options={["Male","Female","Other gender"]} name="Gender" input={input} setInput={setInput} index="gender"/>
+          <TextInput name="Age" holder="Your age" input={input} setInput={setInput} index="age" />
+          <SelectInput options={["Resident","Tourist"]} name="Status" input={input} setInput={setInput} index="status"/>
+          <SelectInput options={["Only Myself","Partner","Friends","Lovers","Family"]} name="Relationship" input={input} setInput={setInput} index="relationship"/>
+          <TextInput name="Purpose" holder="Your purpose" input={input} setInput={setInput} index="purpose"/>
+          <SelectInput options={["High","Medium","Low"]} name="Budget" input={input} setInput={setInput} index="budget"/>
           <TextInput name="Preference" holder="Your preference" input={input} setInput={setInput} index="preference"/>
           <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" />
-          <SelectInput options={["male","female","other"]} label="select gender"/>
         </div>
         <Button  type="submit"  className="mt-6" fullWidth>
           submit
