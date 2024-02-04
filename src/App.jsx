@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react"
+import NavbarSimple from "./components/NavbarSimple"
 
 const App = () => {
-   return ( 
-      <p></p>
-   )
+  return ( 
+    <>
+      <NavbarSimple/>
+      <p>test</p>
+    </>
+  )
 }
 export default App
