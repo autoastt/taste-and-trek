@@ -18,7 +18,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
+        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -28,7 +28,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
+        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -38,7 +38,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-        <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
+        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">About Us</Button>
         </a>
       </Typography>
       <Typography
@@ -48,7 +48,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#about-us" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          <Button variant="text" className="rounded-full normal-case font-medium">About Us</Button>
+          <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">About Us</Button>
           
         </a>
       </Typography>

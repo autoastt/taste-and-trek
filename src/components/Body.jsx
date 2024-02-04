@@ -7,11 +7,12 @@ const Body = () => {
   const [input, setInput] = useState(data)
 
   return ( 
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 my-8 px-4">
-      <div className="grid md:grid-row-3 gap-2">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4">
+      <div className="grid lg:grid-row-3 gap-2">
         <Card>
           <p>Instruction</p>
         </Card>
+        <div className="lg:hidden"><Form input={input} setInput={setInput}/></div>
         <Card>
           <p>Image</p>
         </Card>
@@ -19,8 +20,9 @@ const Body = () => {
           <p>Text</p>
         </Card>
       </div>
-      <Form input={input} setInput={setInput}/>
+      <div className="hidden lg:block"><Form input={input} setInput={setInput} className="hidden"/></div>
     </div>
   )
+  
 }
 export default Body
