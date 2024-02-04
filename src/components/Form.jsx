@@ -5,10 +5,15 @@ Button,
 Typography} from "@material-tailwind/react"
 import TextInput from "./TextInput"
 import SelectInput from "./SelectInput"
+import generation from "../gpt/generation"
 const Form = (props) => {
-    const {input, setInput} = props
+    const {input, setInput, output, setOutput} = props
     const handleSubmit = e => {
         e.preventDefault() 
+        let newOutput
+        generation(input).then((result) => (newOutput = result))
+        setOutput(newOutput)
+        console.log(output)
     }
     return (
     <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
