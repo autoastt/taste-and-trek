@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Select,Option,Typography} from "@material-tailwind/react";
 const SelectInput = (props) => {
-  const {options, name, input, setInput, index} = props;
+  const {options, name, input, setInput, index, loading} = props;
   const [selectedItem, setSelectedItem] = useState("Counter")
   const handleChange = e => {
     setSelectedItem(e)
@@ -19,6 +19,7 @@ const SelectInput = (props) => {
         value={selectedItem} 
         onChange={handleChange} 
         label="Select"
+        disabled = {loading}
       >
         {options.map(option => <Option key={option} value={option}>{option}</Option>)}
       </Select>

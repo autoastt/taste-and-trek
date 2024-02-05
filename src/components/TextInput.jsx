@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Input,Typography } from "@material-tailwind/react";
 const TextInput = (props) => {
-    const {name,holder,input,setInput,index} = props
+    const {name,holder,input,setInput,index, loading} = props
     const handleChange = e => {
       const newInput = input 
       newInput[index] = e.target.value
@@ -18,6 +18,7 @@ const TextInput = (props) => {
             size="lg"
             placeholder={holder}
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            disabled = {loading}
             labelProps={{
               className: "before:content-none after:content-none",
             }}
