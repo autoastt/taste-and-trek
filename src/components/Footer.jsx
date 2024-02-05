@@ -33,6 +33,24 @@ export default function Footer() {
           <Typography variant="h5" className="mb-6">
             About Us
           </Typography>
+          <Typography variant="h6">
+            Taste and Trek: Transforming Travel with Personalized AI Travel Recommendation<br />
+          </Typography>
+          <Typography >
+            Taste and Trek revolutionizes the way travelers explore the world, merging the sophistication of generative artificial intelligence technologies 
+            like GPT-4 Turbo and Dall-E-3 into a seamless, personalized travel planning experience. This innovative platform offers more than just itinerary 
+            suggestions; it crafts unique, AI-generated photos that capture the essence of each journey, making travel planning simple and enjoyable. By 
+            addressing the challenge that over 50% of Americans face—spending a week or more deciding on their next destination—Taste and Trek significantly 
+            reduces planning time by offering customized suggestions that cater to individual preferences and lifestyles.<br /><br />
+            
+            Beyond serving as a comprehensive guide for travelers, Taste and Trek opens new avenues for local businesses through its integration with Google Maps, 
+            enhancing their visibility and attracting a wider audience. It stands as a one-stop ecosystem for travelers, residents, and tourism leaders, promoting 
+            local tourism with tailor-made plans for each traveler. With Taste and Trek, creating an effortless travel plan takes just one minute, inviting you to 
+            discover the beauty and diversity of the world through a lens that is uniquely yours.<br /><br />
+          </Typography>
+          <Typography variant="h6">
+            Our Team
+          </Typography>
           <div className="grid grid-cols-1 md:grid-cols-4 justify-between justify-items-center gap-4">
             {LINKS.map(({ pic, title, desc }) => (
               <div key={title} className="grid grid-row-3 justify-items-center mb-4 md:mb-0">

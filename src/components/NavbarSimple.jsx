@@ -83,7 +83,11 @@ export default function NavbarSimple() {
         >
           Taste and Trek (LOGO)
         </Typography> */}
-        <img src="/src/assets/logo.png" className="mr-4 size-12 rounded-full"/>
+        <div id="name" class="flex items-center">
+          <img src="/src/assets/logo.png" class="mr-4 size-12 rounded-full"/>
+          <Typography variant="h6" color="black" class="flex-grow text-right dark:!text-white">Trace and Trek</Typography>
+        </div>
+
         <div className="hidden lg:block">
           <NavList />
         </div>
