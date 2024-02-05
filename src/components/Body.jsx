@@ -31,7 +31,7 @@ const Body = () => {
           <Typography variant="h2" color="black" className="text-center py-4 dark:text-white">Your Plan</Typography>
           {loading ? <Spinner className="self-center size-12"/>: (output.text).map(out => 
               (out == "Submit your information to generate your plan!" ? 
-              (<Typography variant="h5" className="dark:text-darky3 text-center"> {out} </Typography>)
+              (<Typography key={out} variant="h5" className="dark:text-darky3 text-center"> {out} </Typography>)
               :
               (<div key={out} className="pb-3">
                 <Typography variant="h5" className="dark:text-darky3"> {out.split(';')[0]} </Typography>

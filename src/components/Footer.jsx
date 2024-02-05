@@ -40,7 +40,7 @@ export default function Footer() {
           <Typography variant="h6">
             Taste and Trek: Transforming Travel with Personalized AI Travel Recommendation<br />
           </Typography>
-          <Typography class="text-justify">
+          <Typography className="text-justify">
             Taste and Trek revolutionizes the way travelers explore the world, merging the sophistication of generative artificial intelligence technologies 
             like GPT-4 Turbo and Dall-E-3 into a seamless, personalized travel planning experience. This innovative platform offers more than just itinerary 
             suggestions; it crafts unique, AI-generated photos that capture the essence of each journey, making travel planning simple and enjoyable. By 
