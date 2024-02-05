@@ -23,7 +23,7 @@ const ToggleMode = () => {
     }
   }
 
-  return <IconButton variant="text" onClick={handleClick} className="">
+  return <IconButton variant="text" onClick={handleClick} className="dark:hover:bg-darky3">
     {theme === "light" ? 
     <SunIcon className="size-5" strokeWidth={2} />
     :

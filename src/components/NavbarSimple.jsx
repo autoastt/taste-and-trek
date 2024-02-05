@@ -19,7 +19,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">Demo Video</Button>
+        <Button variant="text" className="dark:hover:bg-darky3 rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">Demo Video</Button>
         </a>
       </Typography>
       {/* <Typography
@@ -49,7 +49,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#about-us" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">About Us</Button>
+          <Button variant="text" className="dark:hover:bg-darky3 rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">About Us</Button>
           
         </a>
       </Typography>
@@ -83,9 +83,9 @@ export default function NavbarSimple() {
         >
           Taste and Trek (LOGO)
         </Typography> */}
-        <div id="name" class="flex items-center text-black">
-          <img src="/src/assets/logo.png" class="mr-4 size-12 rounded-full"/>
-          <span class="bg-gradient-to-r from-blue-400  to-indigo-600 inline-block text-transparent bg-clip-text text-base flex-grow text-right font-medium py-2 px-4 dark:to-darky3">Trace and Trek</span>
+        <div id="name" className="flex items-center text-black">
+          <img src="/src/assets/logo.png" className="mr-4 size-12 rounded-full"/>
+          <span className="bg-gradient-to-r from-blue-400  to-indigo-600 inline-block text-transparent bg-clip-text text-base flex-grow text-right font-bold py-2 px-4 dark:to-darky3">Trace and Trek</span>
         </div>
 
         <div className="hidden lg:block">
