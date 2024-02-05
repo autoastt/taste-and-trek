@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Form from "./Form"
+import Map from "./Map"
 import data from "../assets/data"
 import { Card, Spinner, Typography } from "@material-tailwind/react"
 import Instruction from "./Instruction"
@@ -40,6 +41,7 @@ const Body = () => {
             
           )}
         </Card>
+        <Map mapId = {mapId} />
       </div>
       <div className="hidden lg:block"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId}/></div>
     </div>
