@@ -30,7 +30,7 @@ const ToggleMode = () => {
     rotate: -90,
     borderRadius: "100%"
   }}>
-    <IconButton variant="text" onClick={handleClick} className="dark:hover:bg-darky3">
+    <IconButton variant="text" onClick={handleClick} className="rounded-full dark:hover:bg-darky3">
       {theme === "light" ? 
       <SunIcon className="size-5" strokeWidth={2} />
       :
