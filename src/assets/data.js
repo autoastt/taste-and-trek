@@ -1,13 +1,13 @@
 let data = {
-  gender: "male",
-  age: "20",
-  status: "resident",
-  relationship: "family",
-  purpose: "family trip",
-  location: "Singapore",
-  budget: "high",
-  preference: "local Singaporean food and indoor",
-  recent_travel: "Garden by the Bay",
+  gender: "",
+  age: "",
+  status: "",
+  relationship: "",
+  purpose: "",
+  location: "",
+  budget: "",
+  preference: "",
+  recent_travel: "",
 }
 export default data
 
