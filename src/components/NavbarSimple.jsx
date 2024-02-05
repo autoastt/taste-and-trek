@@ -73,14 +73,15 @@ export default function NavbarSimple() {
   return (
     <Navbar className="bg-gray-50 sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
+        {/* <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
           Taste and Trek (LOGO)
-        </Typography>
+        </Typography> */}
+        <img src="/src/assets/logo.png" className="mr-4 size-12 rounded-full"/>
         <div className="hidden lg:block">
           <NavList />
         </div>
