@@ -16,20 +16,22 @@ const Body = () => {
     4: "ChIJIwphYaYP2jERR0tVy0RM624",
     1: "ChIJr9wqENkT2jERkRs7pMj6FLQ"
   })
+  const [mapurl, setMapurl] = useState(`https://www.google.com/maps/embed/v1/directions?key=${process.env.GOOGLEMAP_API_KEY}&origin=place_id:${mapId[0]}&destination=place_id:${mapId[4]}&waypoints=place_id:${mapId[1]}|place_id:${mapId[2]}|place_id:${mapId[3]}`)
   return ( 
+    <div>
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4 lg:ml-12 lg:my-12">
       <div className="lg:grid lg:grid-row-3 lg:gap-2">
         <Card className="pb-8 mb-4 dark:bg-darky1">
           <Instruction/>
         </Card>
-        <div className="mb-4 lg:hidden"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId}/></div>
+        <div className="mb-4 lg:hidden"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId} setMapurl={setMapurl}/></div>
         <Card className="items-center pb-8 px-4 mb-4 dark:bg-darky1">
           <Typography variant="h2" color="black" className="py-4 dark:text-white">Your Poster</Typography>
           {loading ? <Spinner className="size-12"/> : <img src={output['url']} className="h-auto w-4/5 md:max-w-lg object-cover overflow-hidden rounded-[2rem]"/>}
         </Card>
         <Card className="pb-8 px-6 dark:bg-darky1">
           <Typography variant="h2" color="black" className="text-center py-4 dark:text-white">Your Plan</Typography>
-          {loading ? <Spinner className="self-center size-12"/>: (output.text).map(out => 
+          {loading ? <Spinner className="self-center size-12"/> : (output.text).map(out => 
               (out == "Submit your information to generate your plan!" ? 
               (<Typography key={out} variant="h5" className="dark:text-darky3 text-center"> {out} </Typography>)
               :
@@ -41,9 +43,10 @@ const Body = () => {
             
           )}
         </Card>
-        <Map mapId = {mapId} />
       </div>
-      <div className="hidden lg:block"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId}/></div>
+      <div className="hidden lg:block"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId} setMapurl={setMapurl}/></div>
+    </div>
+    <Map mapurl = {mapurl} loading={loading}/>
     </div>
   )
   

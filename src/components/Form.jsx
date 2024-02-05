@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
 Card,
 Button,
@@ -8,26 +8,58 @@ import SelectInput from "./SelectInput"
 import generation from "../gpt/generation"
 import search from "../map/search"
 const Form = (props) => {
-    const {input, setInput, output, setOutput, loading, setLoading, mapId, setMapId} = props
-    const handleSubmit = e => {
-        e.preventDefault() 
-        console.log(input)
-        setLoading(true)
-        generation(input)
-        .then((result) => {
-          setOutput(result)
-          result.text.map((out,i)=>{ 
-          search(out.split(';')[1]).then((searchId) => {
-               console.log(i)
-               const newMap = mapId
-               newMap[i] = searchId
-               setMapId(newMap)
-             })
-          }) 
-          console.log(mapId)
-          setLoading(false) 
-       })
-    }
+    const {input, setInput, output, setOutput, loading, setLoading, mapId, setMapId, setMapurl} = props
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      console.log(input);
+      setLoading(true);
+    
+      try {
+        const result = await generation(input);
+    
+        setOutput(result);
+    
+        // Use Promise.all to handle multiple asynchronous calls concurrently
+        const searchPromises = result.text.map(async (out, i) => {
+          const searchId = await search(out.split(';')[1]);
+          console.log(i);
+    
+          // Update mapId using the current state
+          const newMap = mapId
+          console.log("searchId",searchId)
+          newMap[i] = searchId
+          setMapId(newMap);
+        });
+    
+        // Wait for all search promises to resolve
+        await Promise.all(searchPromises);
+    
+        // Generate mapurl using the updated mapId
+        const generatedMapurl = `https://www.google.com/maps/embed/v1/directions?key=${process.env.GOOGLEMAP_API_KEY}&origin=place_id:${mapId[0]}&destination=place_id:${mapId[4]}&waypoints=place_id:${mapId[1]}|place_id:${mapId[2]}|place_id:${mapId[3]}`;
+        if (mapId && mapId.some(m => m === undefined)) {
+          console.log("There is an undefined element in mapId");
+          setMapurl("");
+        } else {
+          console.log("No undefined elements in mapId");
+          setMapurl(generatedMapurl);
+        }
+        
+    
+        setLoading(false);
+        console.log(mapId);
+      } catch (error) {
+        // Handle errors here
+        console.error("Error:", error);
+        setLoading(false);
+      }
+    };
+    
+
+    // useEffect(() => {
+    //   if(output.text != "Submit your information to generate your plan!"){
+        
+    //   }
+    // }, [output])
 
     return (
     <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
@@ -50,7 +82,7 @@ const Form = (props) => {
           <TextInput name="Preference" holder="Your preference" input={input} setInput={setInput} index="preference" loading={loading}/>
           <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" loading={loading}/>
         </div>
-        <Button type="submit" loading={loading} className="mt-6 dark:bg-darky1" fullWidth >
+        <Button type="submit" loading={loading} className="mt-12 dark:bg-darky1" fullWidth >
           {loading ? "loading" : "submit" }
         </Button>
       </form>

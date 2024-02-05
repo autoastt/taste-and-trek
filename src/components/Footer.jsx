@@ -58,11 +58,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 justify-between justify-items-center gap-4">
             {LINKS.map(({ pic, title, desc, link }) => (
               <div key={title} className="grid grid-row-3 justify-items-center mb-4 md:mb-0">
-                  <a href={link}><img 
+                  <a href={link} target="_blank"><img 
                     className="h-24 w-24 rounded-full object-cover mb-4 hover:ring ring-offset-4 dark:ring-offset-darky1 ring-indigo-400 dark:ring-darky3" 
                     src={pic}
                     alt={title}/></a>
-                  <a href={link}><Typography
+                  <a href={link} target="_blank"><Typography
                     variant="h6"
                     className="mb-3"
                     key={title}

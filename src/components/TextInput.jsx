@@ -17,7 +17,7 @@ const TextInput = (props) => {
             onChange={handleChange} 
             size="lg"
             placeholder={holder}
-            className=" border-t-blue-gray-200 hover:border-indigo-400 hover:!border-t-indigo-400 focus:border-indigo-400 focus:!border-t-indigo-400 dark:hover:border-darky3 dark:hover:!border-t-darky3 dark:focus:border-darky3 dark:focus:!border-t-darky3 dark:text-gray-200"
+            className="!border-t-blue-gray-200 hover:border-indigo-400 hover:!border-t-indigo-400 focus:border-indigo-400 focus:!border-t-indigo-400 dark:hover:border-darky3 dark:hover:!border-t-darky3 dark:focus:border-darky3 dark:focus:!border-t-darky3 dark:text-gray-200 "
             disabled = {loading}
             labelProps={{
               className: "before:content-none after:content-none",
