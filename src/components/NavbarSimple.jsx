@@ -92,7 +92,7 @@ export default function NavbarSimple() {
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="ml-auto mr-4 lg:hidden shrink"><ToggleMode/></div>
+        <div className="ml-auto mr-4 block lg:hidden"><ToggleMode/></div>
         <IconButton
           variant="text"
           className="lg:ml-auto dark:text-white mr-4 h-6 w-6 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

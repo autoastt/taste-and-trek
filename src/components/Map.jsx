@@ -16,7 +16,7 @@ const Map = (props) => {
                 referrerPolicy="no-referrer-when-downgrade"
                 src={mapurl}>
             </iframe>)}
-            <span className="mb-8 ml-12 text-xs text-red-800 dark:text-[#fda4af]">* In some cases, Google Maps could not display the route due to the undefined locations in Google Maps.</span>
+            <span className="mb-8 mx-12 text-xs text-red-800 dark:text-[#fda4af]">* In some cases, Google Maps could not display the route due to the undefined locations in Google Maps.</span>
         </Card>
     )
 }
