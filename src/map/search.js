@@ -1,6 +1,7 @@
 import axios from 'axios';
+const googleMapAPI = process.env.GOOGLEMAP_API_KEY
 const search  = async (place) => {
-  const googleMapAPI = process.env.GOOGLEMAP_API_KEY
+
   const req = await axios.post(
   'https://places.googleapis.com/v1/places:searchText',
   // '{\n  "textQuery" : "Spicy Vegetarian Food in Sydney, Australia"\n}',
@@ -11,7 +12,7 @@ const search  = async (place) => {
     headers: {
       'Content-Type': 'application/json',
       'X-Goog-Api-Key': googleMapAPI,
-      'X-Goog-FieldMask': 'places.displayName,places.formattedAddress,places.id'
+      'X-Goog-FieldMask': 'places.id'
     }
   }
   )

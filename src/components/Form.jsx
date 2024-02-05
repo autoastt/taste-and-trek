@@ -16,8 +16,7 @@ const Form = (props) => {
         generation(input)
         .then((result) => {
           setOutput(result)
-          console.log("out", output)
-          output.text.map((out,i)=>{ 
+          result.text.map((out,i)=>{ 
           search(out.split(';')[1]).then((searchId) => {
                console.log(i)
                const newMap = mapId

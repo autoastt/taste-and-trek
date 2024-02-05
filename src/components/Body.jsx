@@ -10,11 +10,11 @@ const Body = () => {
   const [loading, setLoading] = useState(false)
   const [output, setOutput] = useState(outputData)
   const [mapId, setMapId] = useState({
-    0: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
-    2: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
-    3: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
-    4: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
-    1: "ChIJgUbEo8cfqokR5lP9_Wh_DaM"
+    0: "ChIJQfAL2JYZ2jER9v06BxkNw1k",
+    2: "ChIJt7a1YKgZ2jER1U6XOjXyMCA",
+    3: "ChIJQ6MVplUZ2jERn1LmNH0DlDA",
+    4: "ChIJIwphYaYP2jERR0tVy0RM624",
+    1: "ChIJr9wqENkT2jERkRs7pMj6FLQ"
   })
   return ( 
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4 lg:ml-12 lg:my-12">
