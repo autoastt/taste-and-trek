@@ -2,11 +2,9 @@ import { useState } from "react";
 import { Select,Option,Typography} from "@material-tailwind/react";
 const SelectInput = (props) => {
   const {options, name, input, setInput, index, loading} = props;
-  const [selectedItem, setSelectedItem] = useState("Counter")
   const handleChange = e => {
-    setSelectedItem(e)
     const newInput = input 
-    newInput[index] = selectedItem
+    newInput[index] = e
     setInput(newInput)
     // console.log(input)
   }
@@ -16,7 +14,6 @@ const SelectInput = (props) => {
          {name}
       </Typography>
       <Select 
-        value={selectedItem} 
         onChange={handleChange} 
         label="Select"
         disabled = {loading}

@@ -34,16 +34,19 @@ const Form = (props) => {
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleSubmit}>
         <div className="mb-1 flex flex-col gap-6">
           <SelectInput options={["Male","Female","Other gender"]} name="Gender" input={input} setInput={setInput} index="gender" loading={loading}/>
-          <TextInput name="Age" holder="Your age" input={input} setInput={setInput} index="age" loading={loading} />
-          <SelectInput options={["Resident","Tourist"]} name="Status" input={input} setInput={setInput} index="status" loading={loading}/>
+          <TextInput name="Age" holder="Your age" input={input} setInput={setInput} index="age" loading={loading}/>
+          <SelectInput options={["Resident","Tourist"]} name="Status" input={input} setInput={setInput} index="status" loading={loading} />
           <SelectInput options={["Only Myself","Partner","Friends","Lovers","Family"]} name="Relationship" input={input} setInput={setInput} index="relationship" loading={loading}/>
-          <TextInput name="Purpose" holder="Your purpose" input={input} setInput={setInput} index="purpose" loading={loading}/>
+          <TextInput name="Purpose" holder="Your purpose" input={input} setInput={setInput} index="purpose" loading={loading} />
           <SelectInput options={["High","Medium","Low"]} name="Budget" input={input} setInput={setInput} index="budget" loading={loading}/>
           <TextInput name="Preference" holder="Your preference" input={input} setInput={setInput} index="preference" loading={loading}/>
-          <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" loading={loading} />
+          <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" loading={loading}/>
         </div>
-        <Button type="submit" loading={loading} className="mt-6" fullWidth>
-          submit
+        <Button type="submit" loading={loading} className="mt-6" fullWidth >
+          {loading ? "loading" : "submit" }
+        </Button>
+        <Button type="reset" className="mt-6" fullWidth disabled={loading}>
+          Reset
         </Button>
       </form>
     </Card>
