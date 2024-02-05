@@ -10,11 +10,11 @@ const openai = new OpenAI({
 async function generation(data) {
   const text = await chatgpt(data);
   data.plan = [2, 6].map((x) => text.split("\n")[x].split(";")[0].split(".")[1]).join(",");
-  // const img_url = await dalle(data);
+  const img_url = await dalle(data);
   console.log("running")
   return {
     text: [0, 2, 4, 6, 8].map((x) => text.split("\n")[x]), 
-    // url: img_url,
+    url: img_url,
   }
 }
 
