@@ -17,7 +17,7 @@ const TextInput = (props) => {
             onChange={handleChange} 
             size="lg"
             placeholder={holder}
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900 dark:focus:border-darky3 dark:focus:!border-t-darky3"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900 dark:focus:border-darky3 dark:focus:!border-t-darky3 dark:text-gray-200"
             disabled = {loading}
             labelProps={{
               className: "before:content-none after:content-none",
