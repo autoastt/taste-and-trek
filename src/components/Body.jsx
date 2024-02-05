@@ -11,21 +11,21 @@ const Body = () => {
   return ( 
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4 lg:ml-12 lg:my-12">
       <div className="lg:grid lg:grid-row-3 lg:gap-2">
-        <Card className="pb-8 mb-4">
+        <Card className="pb-8 mb-4 dark:bg-darky1">
           <Instruction/>
         </Card>
         <div className="mb-4 lg:hidden"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading}/></div>
-        <Card className="items-center pb-8 px-4 mb-4">
-          <Typography variant="h2" color="black" className="py-4">Your Poster</Typography>
+        <Card className="items-center pb-8 px-4 mb-4 dark:bg-darky1">
+          <Typography variant="h2" color="black" className="py-4 dark:text-white">Your Poster</Typography>
           {loading ? <Spinner className="size-12"/> : <img src={output['url']} className="h-auto w-4/5 md:max-w-lg object-cover overflow-hidden rounded-[2rem]"/>}
         </Card>
-        <Card className="pb-8 px-6">
-          <Typography variant="h2" color="black" className="text-center py-4">Your Plan</Typography>
+        <Card className="pb-8 px-6 dark:bg-darky1">
+          <Typography variant="h2" color="black" className="text-center py-4 dark:text-white">Your Plan</Typography>
           {loading ? <Spinner className="self-center size-12"/>: (output.text).map(out => 
             <div key={out} className="pb-3">
-              <Typography variant="h5"> {out.split(';')[0]} </Typography>
-              <Typography variant="h6">Location: {out.split(';')[1]} </Typography>
-              <Typography> {out.split(';')[2]} </Typography>
+              <Typography variant="h5" className="dark:text-darky3"> {out.split(';')[0]} </Typography>
+              <Typography variant="h6" className="dark:text-darky4">Location: {out.split(';')[1]} </Typography>
+              <Typography className="dark:text-blue-gray-200"> {out.split(';')[2]} </Typography>
             </div>
           )}
         </Card>

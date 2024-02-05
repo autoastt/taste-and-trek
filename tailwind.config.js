@@ -9,6 +9,12 @@ module.exports = withMT({
   ],
   theme: {
     extend: {},
+    colors: {
+      'darky1': '#222831',
+      'darky2': '#393E46',
+      'darky3': '#00ADB5',
+      'darky4': '#EEEEEE',
+    },
   },
   future : {
     hoverOnlyWhenSupported : true,

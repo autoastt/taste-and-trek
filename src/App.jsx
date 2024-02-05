@@ -3,7 +3,7 @@ import Footer from "./components/Footer"
 import Body from "./components/Body"
 const App = () => {
   return ( 
-    <div className="dark:bg-blue-gray-600">
+    <div className="dark:bg-darky2">
       <NavbarSimple/>
       <Body/>
       <Footer/>

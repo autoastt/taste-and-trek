@@ -25,10 +25,10 @@ const Form = (props) => {
     return (
     <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
       
-      <Typography variant="h4" color="blue-gray" className="mt-11"> 
+      <Typography variant="h4" color="blue-gray" className="mt-11 dark:text-white"> 
         Taste and Trek
       </Typography>
-      <Typography color="gray" className="mt-1 font-normal">
+      <Typography color="gray" className="mt-1 font-normal dark:text-blue-gray-200">
         Fill your information 
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleSubmit}>
@@ -42,10 +42,10 @@ const Form = (props) => {
           <TextInput name="Preference" holder="Your preference" input={input} setInput={setInput} index="preference" loading={loading}/>
           <TextInput name="Recent Travel" holder="Your recent travel" input={input} setInput={setInput} index="recent_travel" loading={loading}/>
         </div>
-        <Button type="submit" loading={loading} className="mt-6" fullWidth >
+        <Button type="submit" loading={loading} className="mt-6 dark:bg-darky1" fullWidth >
           {loading ? "loading" : "submit" }
         </Button>
-        <Button type="reset" className="mt-6" fullWidth disabled={loading}>
+        <Button type="reset" className="mt-6 dark:bg-darky1" fullWidth disabled={loading}>
           Reset
         </Button>
       </form>

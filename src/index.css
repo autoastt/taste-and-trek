@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.secondary-select button[aria-expanded="true"] ~ label {
+    background-color: white;
+    width: fit-content;
+    margin-left: 15px;
+  }
+  .secondary-select button[aria-expanded="true"] ~ label::after,
+  .secondary-select button[aria-expanded="true"] ~ label::before {
+    content: "";
+    width: 0;
+  }

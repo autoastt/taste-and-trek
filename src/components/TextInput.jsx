@@ -10,14 +10,14 @@ const TextInput = (props) => {
     }
     return (
         <div className="flex flex-col gap-6">
-          <Typography variant="h6" color="blue-gray" className="-mb-3">
+          <Typography variant="h6" color="blue-gray" className="-mb-3 dark:text-white">
             {name}
           </Typography>
           <Input
             onChange={handleChange} 
             size="lg"
             placeholder={holder}
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900 dark:focus:border-darky3 dark:focus:!border-t-darky3"
             disabled = {loading}
             labelProps={{
               className: "before:content-none after:content-none",

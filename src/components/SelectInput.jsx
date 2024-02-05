@@ -10,13 +10,18 @@ const SelectInput = (props) => {
   }
     return (
     <div className="flex flex-col gap-6">
-      <Typography variant="h6" color="blue-gray" className="-mb-3">
+      <Typography variant="h6" color="blue-gray" className="-mb-3 dark:text-white">
          {name}
       </Typography>
       <Select 
         onChange={handleChange} 
         label="Select"
         disabled = {loading}
+        className="dark:focus:border-darky3"
+        labelProps={{
+          // see also global css -> .secondary-select
+          className: "after:border-none before:border-none text-transparent",
+        }}
       >
         {options.map(option => <Option key={option} value={option}>{option}</Option>)}
       </Select>

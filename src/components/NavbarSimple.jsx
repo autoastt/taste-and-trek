@@ -19,7 +19,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">Demo Video</Button>
+        <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">Demo Video</Button>
         </a>
       </Typography>
       {/* <Typography
@@ -49,7 +49,7 @@ function NavList({ openNav, setOpenNav }) {
         className="p-1 font-medium"
       >
         <a href="#about-us" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
-          <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4">About Us</Button>
+          <Button variant="text" className="rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">About Us</Button>
           
         </a>
       </Typography>
@@ -73,8 +73,8 @@ export default function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar className="bg-gray-50 dark:bg-blue-gray-900 sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
-      <div className="flex items-center justify-between text-blue-gray-900">
+    <Navbar className="border-none bg-gray-50 dark:bg-darky1 sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <div className="flex items-center justify-between">
         {/* <Typography
           as="a"
           href="#"
@@ -90,7 +90,7 @@ export default function NavbarSimple() {
         <div className="ml-auto mr-4 lg:hidden shrink"><ToggleMode/></div>
         <IconButton
           variant="text"
-          className="lg:ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="lg:ml-auto dark:text-white mr-4 h-6 w-6 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
