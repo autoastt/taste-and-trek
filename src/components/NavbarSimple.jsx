@@ -85,7 +85,7 @@ export default function NavbarSimple() {
           Taste and Trek (LOGO)
         </Typography> */}
         <div id="name" className="flex items-center text-black">
-          <img src="/src/assets/logo.png" className="mr-4 size-12 rounded-full"/>
+          <img src="/assets/logo.png" className="mr-4 size-12 rounded-full"/>
           <span className="bg-gradient-to-r from-blue-400  to-indigo-600 inline-block text-transparent bg-clip-text text-base flex-grow text-right font-bold py-2 px-4 dark:to-darky3">Trace and Trek</span>
         </div>
 

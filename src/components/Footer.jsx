@@ -2,25 +2,25 @@ import { Typography } from "@material-tailwind/react";
 
 const LINKS = [
   {
-    pic: "/src/assets/fair.jpeg",
+    pic: "/assets/fair.jpeg",
     title: "Kulpatch Chananum",
     desc: ["NTU CSEC", " Year 1"],
     link: "https://www.linkedin.com/in/kulpatch-chananam-b50756277",
   },
   {
-    pic: "/src/assets/poon.jpeg",
+    pic: "/assets/poon.jpeg",
     title: "Nathan Juirnarongrit",
     desc: ["NTU BCE", " Year 1"],
     link: "https://www.linkedin.com/in/nathan-juirnarongrit-0809b128a",
   },
   {
-    pic: "/src/assets/auto.jpeg",
+    pic: "/assets/auto.jpeg",
     title: "Peeranat Kongkijpipat",
     desc: ["NTU BCG", " Year 1"],
     link: "https://www.linkedin.com/in/peeranat-kjp/",
   },
   {
-    pic: "/src/assets/petch.jpeg",
+    pic: "/assets/petch.jpeg",
     title: "Phumrapee Pisutsin",
     desc: ["NTU MEEC", " Year 5"],
     link: "https://www.linkedin.com/in/Phumrapee",
