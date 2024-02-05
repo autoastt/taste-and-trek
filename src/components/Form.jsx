@@ -43,6 +43,7 @@ const Form = (props) => {
         <div className="mb-1 flex flex-col gap-6">
           <SelectInput options={["Male","Female","Other genders"]} name="Gender" input={input} setInput={setInput} index="gender" loading={loading}/>
           <TextInput name="Age" holder="Your age" input={input} setInput={setInput} index="age" loading={loading}/>
+          <TextInput name="Destination" holder="Where do you want to go?" input={input} setInput={setInput} index="location" loading={loading}/>
           <SelectInput options={["Resident","Tourist"]} name="Status" input={input} setInput={setInput} index="status" loading={loading} />
           <SelectInput options={["Only myself","Partner","Friends","Lovers","Family"]} name="Travel with" input={input} setInput={setInput} index="relationship" loading={loading}/>
           <TextInput name="Purpose" holder="Your purpose" input={input} setInput={setInput} index="purpose" loading={loading} />

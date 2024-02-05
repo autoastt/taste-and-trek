@@ -14,6 +14,7 @@ async function chatgpt(data) {
         content: `Please recommmend a plan on food and travel for the entire day given the following information.
 
         The person is a ${data.status} who is travelling with ${data.relationship} on a ${data.purpose} with a ${data.budget} budget.
+        City/Country to visit is ${data.location}.
         Preferences: ${data.preference == "" ? "None" : data.preference}
         Avoid: ${data.recent_travel == "" ? "None" : data.recent_travel}.
 

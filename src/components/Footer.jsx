@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full pt-8 bg-gray-50 dark:bg-darky1" id="about-us">
       <div className="mx-auto w-full max-w-7xl px-8 dark:text-white">
-        <div className="grid grid-cols-1 justify-between gap-4">
+        <div className="grid grid-cols-1 justify-between gap-4 text-justify">
           <Typography variant="h5" className="mb-6">
             About Us
           </Typography>

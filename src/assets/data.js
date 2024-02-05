@@ -4,6 +4,7 @@ let data = {
   status: "resident",
   relationship: "family",
   purpose: "family trip",
+  location: "Singapore",
   budget: "high",
   preference: "local Singaporean food and indoor",
   recent_travel: "Garden by the Bay",
