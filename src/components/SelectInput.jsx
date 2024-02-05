@@ -17,7 +17,7 @@ const SelectInput = (props) => {
         onChange={handleChange} 
         label="Select"
         disabled = {loading}
-        className="dark:focus:border-darky3 focus:border-black"
+        className="!border-blue-gray-200 dark:text-gray-200"
         labelProps={{
           // see also global css -> .secondary-select
           className: "after:border-none before:border-none text-transparent",
