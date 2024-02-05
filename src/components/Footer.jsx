@@ -59,7 +59,7 @@ export default function Footer() {
             {LINKS.map(({ pic, title, desc, link }) => (
               <div key={title} className="grid grid-row-3 justify-items-center mb-4 md:mb-0">
                   <a href={link}><img 
-                    className="h-24 w-24 rounded-full object-cover mb-4" 
+                    className="h-24 w-24 rounded-full object-cover mb-4 hover:ring ring-offset-4 dark:ring-offset-darky1 ring-indigo-400 dark:ring-darky3" 
                     src={pic}
                     alt={title}/></a>
                   <a href={link}><Typography
@@ -78,7 +78,6 @@ export default function Footer() {
                       {desc[0]},
                       {desc[1]}
                   </Typography>
-                
               </div>
             ))}
           </div>
