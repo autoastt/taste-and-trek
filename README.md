@@ -7,21 +7,15 @@ Personalized Travel Recommendations: Powered by GPT-4 Turbo, delivering travel p
 Unique, Memorable Photos: Utilizing Dall-E-3 to generate one-of-a-kind photos that capture the essence of your destination.
 Enhanced Visibility for Local Businesses: Integration with Google Maps boosts exposure for local attractions, increasing tourism and community engagement.
 Effortless Planning Experience: A streamlined, one-minute travel planning process through an intuitive, user-friendly interface.
-Technology Stack
-HTML, CSS, JavaScript: For building a responsive and dynamic user interface.
-React.js: A powerful JavaScript library for creating interactive UIs.
-Vite.js: An incredibly fast front-end build tool.
-Tailwind CSS: A utility-first CSS framework for rapid UI development.
-Google Maps API: To incorporate maps and location data directly into the platform.
-GPT-4 Turbo and Dall-E-3: For generating personalized content and unique images.
-Getting Started
-To get started with Taste and Trek, follow these steps to set up the project on your local machine for development and testing purposes.
 
-## Prerequisites
-Ensure you have the following installed:
+## Technology Stack
+- HTML, CSS, JavaScript: For building a responsive and dynamic user interface.
+- React.js: A powerful JavaScript library for creating interactive UIs.
+- Vite.js: An incredibly fast front-end build tool.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Google Maps API: To incorporate maps and location data directly into the platform.
+- GPT-4 Turbo and Dall-E-3: For generating personalized content and unique images.
 
-- Node.js (LTS version recommended)
-- npm (comes with Node.js)
 ## Installation
 
 ```
