@@ -53,7 +53,7 @@ function NavList({ openNav, setOpenNav }) {
           
         </a>
       </Typography>
-      <ToggleMode/>
+      <div className="hidden lg:block"><ToggleMode/></div>
     </ul>
   );
 }
@@ -73,7 +73,7 @@ export default function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar className="bg-gray-50 sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <Navbar className="bg-gray-50 dark:bg-blue-gray-900 sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         {/* <Typography
           as="a"
@@ -87,9 +87,10 @@ export default function NavbarSimple() {
         <div className="hidden lg:block">
           <NavList />
         </div>
+        <div className="ml-auto mr-4 lg:hidden shrink"><ToggleMode/></div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="lg:ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >

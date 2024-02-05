@@ -3,12 +3,11 @@ import Footer from "./components/Footer"
 import Body from "./components/Body"
 const App = () => {
   return ( 
-    <>
+    <div className="dark:bg-blue-gray-600">
       <NavbarSimple/>
-      {/* <Form props={props}/> */}
       <Body/>
       <Footer/>
-    </>
+    </div>
   )
 }
 export default App
