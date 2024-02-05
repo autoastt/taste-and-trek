@@ -8,13 +8,20 @@ const Body = () => {
   const [input, setInput] = useState(data)
   const [loading, setLoading] = useState(false)
   const [output, setOutput] = useState(outputData)
+  const [mapId, setMapId] = useState({
+    0: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
+    2: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
+    3: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
+    4: "ChIJgUbEo8cfqokR5lP9_Wh_DaM",
+    1: "ChIJgUbEo8cfqokR5lP9_Wh_DaM"
+  })
   return ( 
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4 lg:ml-12 lg:my-12">
       <div className="lg:grid lg:grid-row-3 lg:gap-2">
         <Card className="pb-8 mb-4 dark:bg-darky1">
           <Instruction/>
         </Card>
-        <div className="mb-4 lg:hidden"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading}/></div>
+        <div className="mb-4 lg:hidden"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId}/></div>
         <Card className="items-center pb-8 px-4 mb-4 dark:bg-darky1">
           <Typography variant="h2" color="black" className="py-4 dark:text-white">Your Poster</Typography>
           {loading ? <Spinner className="size-12"/> : <img src={output['url']} className="h-auto w-4/5 md:max-w-lg object-cover overflow-hidden rounded-[2rem]"/>}
@@ -30,7 +37,7 @@ const Body = () => {
           )}
         </Card>
       </div>
-      <div className="hidden lg:block"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading}/></div>
+      <div className="hidden lg:block"><Form input={input} setInput={setInput} output={output} setOutput={setOutput} loading={loading} setLoading = {setLoading} mapId={mapId} setMapId={setMapId}/></div>
     </div>
   )
   

@@ -6,22 +6,30 @@ Typography} from "@material-tailwind/react"
 import TextInput from "./TextInput"
 import SelectInput from "./SelectInput"
 import generation from "../gpt/generation"
-
+import search from "../map/search"
 const Form = (props) => {
-    const {input, setInput, output, setOutput, loading, setLoading} = props
+    const {input, setInput, output, setOutput, loading, setLoading, mapId, setMapId} = props
     const handleSubmit = e => {
         e.preventDefault() 
         console.log(input)
         setLoading(true)
         generation(input)
         .then((result) => {
-          // console.log("result", result)
           setOutput(result)
           console.log("out", output)
-          setLoading(false)
-        })
-        
+          output.text.map((out,i)=>{ 
+          search(out.split(';')[1]).then((searchId) => {
+               console.log(i)
+               const newMap = mapId
+               newMap[i] = searchId
+               setMapId(newMap)
+             })
+          }) 
+          console.log(mapId)
+          setLoading(false) 
+       })
     }
+
     return (
     <Card color="transparent" shadow={false} className="items-center justify-center pb-8">
       
