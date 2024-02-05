@@ -3,10 +3,10 @@ import {useState} from 'react'
 
 const Map = (props) => {
     // const res = search("Pop mart Jurong point")
-     const {mapId} = props
-
+    const {mapId} = props
+    const googleMapAPI = process.env.GOOGLEMAP_API_KEY
     search("Pop mart Jurong Point")
-    const src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyD99MOBbYjQAYrznnC1O9czEwqJjceFPzM&q=place_id:"+mapId
+    const src = `https://www.google.com/maps/embed/v1/place?key=${googleMapAPI}&q=place_id:`+mapId
     return (
         <div>
         <iframe
