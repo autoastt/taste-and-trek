@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import Form from "./Form"
 import Map from "./Map"
-import data from "../assets/data"
+import data from "../../public/assets/data"
 import { Card, Spinner, Typography } from "@material-tailwind/react"
 import Instruction from "./Instruction"
-import outputData from "../assets/outputData"
+import outputData from "../../public/assets/outputData"
 const Body = () => {
   const [input, setInput] = useState(data)
   const [loading, setLoading] = useState(false)
