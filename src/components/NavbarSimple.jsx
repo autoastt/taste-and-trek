@@ -85,7 +85,7 @@ export default function NavbarSimple() {
         </Typography> */}
         <div id="name" class="flex items-center">
           <img src="/src/assets/logo.png" class="mr-4 size-12 rounded-full"/>
-          <Typography variant="h6" color="black" class="flex-grow text-right dark:!text-white">Trace and Trek</Typography>
+          <Typography variant="h6" color="black" class="flex-grow text-right font-medium py-2 px-4 dark:text-darky4">Trace and Trek</Typography>
         </div>
 
         <div className="hidden lg:block">

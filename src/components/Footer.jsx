@@ -5,21 +5,25 @@ const LINKS = [
     pic: "/src/assets/fair.jpeg",
     title: "Kulpatch Chananum",
     desc: ["NTU CSEC", " Year 1"],
+    link: "https://www.linkedin.com/in/kulpatch-chananam-b50756277",
   },
   {
     pic: "/src/assets/poon.jpeg",
     title: "Nathan Juirnarongrit",
     desc: ["NTU BCE", " Year 1"],
+    link: "https://www.linkedin.com/in/nathan-juirnarongrit-0809b128a",
   },
   {
     pic: "/src/assets/auto.jpeg",
     title: "Peeranat Kongkijpipat",
     desc: ["NTU BCG", " Year 1"],
+    link: "https://www.linkedin.com/in/peeranat-kjp/",
   },
   {
     pic: "/src/assets/petch.jpeg",
     title: "Phumrapee Pisutsin",
     desc: ["NTU MEEC", " Year 5"],
+    link: "https://www.linkedin.com/in/Phumrapee",
   }
 ];
  
@@ -36,7 +40,7 @@ export default function Footer() {
           <Typography variant="h6">
             Taste and Trek: Transforming Travel with Personalized AI Travel Recommendation<br />
           </Typography>
-          <Typography >
+          <Typography class="text-justify">
             Taste and Trek revolutionizes the way travelers explore the world, merging the sophistication of generative artificial intelligence technologies 
             like GPT-4 Turbo and Dall-E-3 into a seamless, personalized travel planning experience. This innovative platform offers more than just itinerary 
             suggestions; it crafts unique, AI-generated photos that capture the essence of each journey, making travel planning simple and enjoyable. By 
@@ -52,19 +56,20 @@ export default function Footer() {
             Our Team
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-4 justify-between justify-items-center gap-4">
-            {LINKS.map(({ pic, title, desc }) => (
+            {LINKS.map(({ pic, title, desc, link }) => (
               <div key={title} className="grid grid-row-3 justify-items-center mb-4 md:mb-0">
-                  <img 
+                  <a href={link}><img 
                     className="h-24 w-24 rounded-full object-cover mb-4" 
                     src={pic}
-                    alt={title}/>
-                  <Typography
+                    alt={title}/></a>
+                  <a href={link}><Typography
                     variant="h6"
                     className="mb-3"
                     key={title}
                   >
                     {title}
                   </Typography>
+                  </a>
                   <Typography
                     color="gray"
                     className="italic dark:text-gray-200"
