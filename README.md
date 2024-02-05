@@ -2,7 +2,7 @@
 
 This project is done 
 
-The project can be accessed at <a href="https://taste-and-trek.vercel.app/"/>
+The project can be accessed <a href="https://taste-and-trek.vercel.app"> https://taste-and-trek.vercel.app </a>
 
 To build this project,
 `npm run build`
