@@ -29,11 +29,15 @@ const Body = () => {
         <Card className="pb-8 px-6 dark:bg-darky1">
           <Typography variant="h2" color="black" className="text-center py-4 dark:text-white">Your Plan</Typography>
           {loading ? <Spinner className="self-center size-12"/>: (output.text).map(out => 
-            <div key={out} className="pb-3">
-              <Typography variant="h5" className="dark:text-darky3"> {out.split(';')[0]} </Typography>
-              <Typography variant="h6" className="dark:text-darky4">Location: {out.split(';')[1]} </Typography>
-              <Typography className="dark:text-blue-gray-200"> {out.split(';')[2]} </Typography>
-            </div>
+              (out == "Submit your information to generate your plan!" ? 
+              (<Typography variant="h5" className="dark:text-darky3 text-center"> {out} </Typography>)
+              :
+              (<div key={out} className="pb-3">
+                <Typography variant="h5" className="dark:text-darky3"> {out.split(';')[0]} </Typography>
+                <Typography variant="h6" className="dark:text-darky4"> {out.split(';')[1]} </Typography>
+                <Typography className="dark:text-blue-gray-200"> {out.split(';')[2]} </Typography></div>
+              ))
+            
           )}
         </Card>
       </div>

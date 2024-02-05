@@ -54,9 +54,6 @@ const Form = (props) => {
         <Button type="submit" loading={loading} className="mt-6 dark:bg-darky1" fullWidth >
           {loading ? "loading" : "submit" }
         </Button>
-        <Button type="reset" className="mt-6 dark:bg-darky1" fullWidth disabled={loading}>
-          Reset
-        </Button>
       </form>
     </Card>
     )
