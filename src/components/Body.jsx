@@ -9,7 +9,7 @@ const Body = () => {
   const [loading, setLoading] = useState(false)
   const [output, setOutput] = useState(outputData)
   return ( 
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-8 px-4 lg:ml-12 lg:my-12">
       <div className="lg:grid lg:grid-row-3 lg:gap-2">
         <Card className="pb-8 mb-4">
           <Instruction/>
