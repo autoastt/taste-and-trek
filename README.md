@@ -2,7 +2,11 @@
 
 Welcome to the GitHub repository for Taste and Trek, the revolutionary travel planning platform that leverages the power of generative artificial intelligence to offer personalized travel recommendations and unique, memorable photos for each trip. By combining sophisticated AI technologies with user preferences, we make travel planning effortless and enjoyable, enabling users to discover the beauty and diversity of the world in a way that's uniquely theirs.
 
-Key Features
+## Video Demo
+[![Taste and Trek Demonstration Video](https://img.youtube.com/vi/qEwNKesxvec/hqdefault.jpg)](https://youtu.be/qEwNKesxvec)
+
+
+## Key Features
 Personalized Travel Recommendations: Powered by GPT-4 Turbo, delivering travel plans that match your interests and lifestyle.
 Unique, Memorable Photos: Utilizing Dall-E-3 to generate one-of-a-kind photos that capture the essence of your destination.
 Enhanced Visibility for Local Businesses: Integration with Google Maps boosts exposure for local attractions, increasing tourism and community engagement.
