@@ -36,13 +36,13 @@ const Form = (props) => {
     
         // Generate mapurl using the updated mapId
         const generatedMapurl = `https://www.google.com/maps/embed/v1/directions?key=${process.env.GOOGLEMAP_API_KEY}&origin=place_id:${mapId[0]}&destination=place_id:${mapId[4]}&waypoints=place_id:${mapId[1]}|place_id:${mapId[2]}|place_id:${mapId[3]}`;
-        if (mapId && mapId.some(m => m === undefined)) {
-          console.log("There is an undefined element in mapId");
-          setMapurl("");
-        } else {
-          console.log("No undefined elements in mapId");
-          setMapurl(generatedMapurl);
-        }
+        // if (mapId && mapId.some(m => m === undefined)) {
+        //   console.log("There is an undefined element in mapId");
+        //   setMapurl("");
+        // } else {
+        //   console.log("No undefined elements in mapId");
+        setMapurl(generatedMapurl);
+        // }
         
     
         setLoading(false);
