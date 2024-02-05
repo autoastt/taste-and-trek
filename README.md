@@ -7,18 +7,13 @@ Welcome to the GitHub repository for Taste and Trek, the revolutionary travel pl
 
 
 ## Key Features
-Personalized Travel Recommendations: Powered by GPT-4 Turbo, delivering travel plans that match your interests and lifestyle.
-Unique, Memorable Photos: Utilizing Dall-E-3 to generate one-of-a-kind photos that capture the essence of your destination.
-Enhanced Visibility for Local Businesses: Integration with Google Maps boosts exposure for local attractions, increasing tourism and community engagement.
-Effortless Planning Experience: A streamlined, one-minute travel planning process through an intuitive, user-friendly interface.
+- **Personalized Travel Recommendations**: Powered by GPT-4 Turbo, delivering travel plans that match your interests and lifestyle.
+- **Unique, Memorable Photos**: Utilizing Dall-E-3 to generate one-of-a-kind photos that capture the essence of your destination.
+- **Enhanced Visibility for Local Businesses**: Integration with Google Maps boosts exposure for local attractions, increasing tourism and community engagement.
+- **Effortless Planning Experience**: A streamlined, one-minute travel planning process through an intuitive, user-friendly interface.
 
 ## Technology Stack
-- HTML, CSS, JavaScript: For building a responsive and dynamic user interface.
-- React.js: A powerful JavaScript library for creating interactive UIs.
-- Vite.js: An incredibly fast front-end build tool.
-- Tailwind CSS: A utility-first CSS framework for rapid UI development.
-- Google Maps API: To incorporate maps and location data directly into the platform.
-- GPT-4 Turbo and Dall-E-3: For generating personalized content and unique images.
+<img src="./src/img/architecture.svg">
 
 ## Installation
 
@@ -37,5 +32,13 @@ npm run dev
 ```
 
 ## Visit Us
-For more information and to try Taste and Trek, visit our website:
+To try Taste and Trek, visit our website:
 <a href="https://taste-and-trek.vercel.app/">https://taste-and-trek.vercel.app/</a>.
+
+## Developers
+
+From Nanyang Technological University, Singapore:
+1. <a href="https://www.linkedin.com/in/Phumrapee">Phumrapee Pisutsin</a>
+2. <a href="https://www.linkedin.com/in/nathan-juirnarongrit-0809b128a">Nathan Juirnarongrit</a>
+3. <a href="https://www.linkedin.com/in/peeranat-kjp/">Peeranat Kongkijpipat</a>
+4. <a href="https://www.linkedin.com/in/kulpatch-chananam-b50756277">Kulpatch Chananam</a>
