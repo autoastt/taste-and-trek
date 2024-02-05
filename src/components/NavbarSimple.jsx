@@ -19,7 +19,7 @@ function NavList({ openNav, setOpenNav }) {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
+        <a href="https://youtu.be/qEwNKesxvec" className="flex items-center hover:text-blue-500 transition-colors" onClick={() => (openNav ? setOpenNav(!openNav) : setOpenNav(openNav))}>
         <Button variant="text" className="dark:hover:bg-darky3 rounded-full normal-case font-medium py-2 px-4 dark:text-darky4">Demo Video</Button>
         </a>
       </Typography>
