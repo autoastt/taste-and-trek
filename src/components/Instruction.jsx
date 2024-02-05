@@ -7,15 +7,15 @@ const Instruction = () => {
         Plan your day!<br></br>
       </Typography>
       <Typography className="text-xl text-center dark:text-white" color="black">
-        Find <span className="font-bold">Restaurant</span> or{" "}
-        <span className="font-bold">Place</span> to go within 60 seconds
+        Find <span className="font-bold">restaurants</span> or{" "}
+        <span className="font-bold">places</span> to go within less than a minute!
       </Typography>
       <Typography className="text-center" color="black">
         <span className="text-center text-lg dark:text-white">
           <span className = "font-bold text-indigo-500 dark:text-darky3">Tell us</span> what you're looking for by<br></br>
         </span>
         <span className="dark:text-white">
-          Fill in your Information, Budget, and Preference<br></br>
+          filling in your information, budget, and preference<br></br>
         </span>
       </Typography>
     </div>
