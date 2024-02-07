@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 const LINKS = [
   {
     pic: "/assets/fair.jpeg",
-    title: "Kulpatch Chananum",
+    title: "Kulpatch Chananam",
     desc: ["NTU CSEC", " Year 1"],
     link: "https://www.linkedin.com/in/kulpatch-chananam-b50756277",
   },
